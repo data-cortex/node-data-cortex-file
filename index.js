@@ -138,11 +138,13 @@ function eventToLine(field_list,event) {
     } else if (column_detail.type == "datetime") {
       if (val instanceof Date) {
         val = val.toISOString();
+      } else if ( typeof val == 'number') {
+        val = val.toString();
       } else if( !DATETIME_REGEX.test(val) ) {
         if( column_detail.is_null ) {
           val = null;
         } else {
-          throw "bad datetime for required column: " + column;
+          throw "bad datetime for column: " + column + " value: " + val;
         }
       }
     }

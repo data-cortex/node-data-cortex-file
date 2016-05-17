@@ -1,6 +1,6 @@
 {
   "name": "node-data-cortex-file",
-  "version": "0.0.2",
+  "version": "0.0.4",
   "description": "Write data cortex events to local files for sync with dc-logs",
   "main": "index.js",
   "scripts": {
