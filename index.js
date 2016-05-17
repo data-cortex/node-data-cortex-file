@@ -56,12 +56,6 @@ function rawEvent(table,event_list) {
 
   let now;
   _.each(event_list,(e) => {
-    if (!e.ingest_datetime) {
-      if (!now) {
-        now = (new Date).toISOString();
-      }
-      e.ingest_datetime = now;
-    }
     if (!e.event_datetime) {
       if (!now) {
         now = (new Date).toISOString();

@@ -127,7 +127,7 @@ const APP_LOG_FIELD_LIST = [
   { name: "app", length: 16, type: "string", is_null: false, default: "" },
   { name: "app_ver", length: 16, type: "string", is_null: false, default: "" },
 
-  { name: "ingest_datetime", length: 0, type: "datetime", is_null: false, default: "" },
+  { name: "ingest_datetime", length: 0, type: "datetime", is_null: true, default: null },
   { name: "event_datetime", length: 0, type: "datetime", is_null: false, default: "" },
 
   { name: "hostname", length: 64, type: "string", is_null: true, default: null },
